@@ -80,7 +80,7 @@ nav {
   background-color: #dcd6c4;
   display: flex;
   justify-content: space-between;
-  padding: 10px 10%;
+  padding: 0 10%;
   align-items: center;
 }
 
@@ -90,10 +90,13 @@ nav {
 }
 
 .link {
-  border-right: 1px solid #bdafaf;
   padding: 10px 0px;
 }
-.link:first-child {
+
+.link a {
+  border-right: 1px solid #bdafaf;
+}
+.link:first-child a {
   border-left: 1px solid #bdafaf;
 }
 .link:hover {
@@ -274,7 +277,7 @@ p {
   nav {
     text-align: center;
     flex-wrap: wrap;
-    padding: 10px 4%;
+    padding: 0 4%;
     justify-content: center;
   }
 
@@ -327,8 +330,9 @@ p {
   }
 
   nav {
-    padding: 5px 0;
+    padding: 0;
     flex-direction: column;
+    gap: 5px;
   }
 
   .left {
@@ -337,7 +341,7 @@ p {
 
   .link a,
   .right a {
-    padding: 5px 10px;
+    padding: 10px 10px;
   }
 
   .tools-section {
