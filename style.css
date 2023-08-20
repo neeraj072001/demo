@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #6e6a61;
+}
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffbf00;
+  padding: 0 10%;
+  padding-top: 1%;
+  padding-bottom: 0.6%;
+}
+
+.Aname h2 {
+  color: #6e6a61;
+}
+
+.logo-name {
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  right: -120px;
+  top: -7px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.down-arrow {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  position: relative;
+}
+
+.one,
+.two,
+.three {
+  border-top: 15px solid #ebe5e5;
+  margin-bottom: 10px;
+}
+
+.one {
+  position: absolute;
+  left: 40%;
+  top: 25%;
+  margin-bottom: 0;
+}
+.three {
+  position: absolute;
+  left: 85%;
+  top: 0%;
+}
+
+.icons {
+  font-size: 30px;
+}
+
+.icons .fa-brands:hover {
+  color: #fff;
+}
+.icons .fa-brands {
+  color: rgb(72, 70, 70);
+}
+.icons a {
+  text-decoration: none;
+}
+nav {
+  background-color: #dcd6c4;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10%;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  border-right: 1px solid #bdafaf;
+  padding: 10px 0px;
+}
+.link:first-child {
+  border-left: 1px solid #bdafaf;
+}
+.link:hover {
+  background-color: #d0c8b1;
+}
+
+.link a,
+.right a {
+  text-decoration: none;
+  color: #6e6a61;
+  font-weight: bold;
+  transition: color 0.3s;
+  padding: 10px 1rem;
+}
+
+.link a:hover {
+  color: #b97422;
+}
+
+.right {
+  padding: 10px 0;
+  border-right: 1px solid #bdafaf;
+  border-left: 1px solid #bdafaf;
+}
+.right:hover {
+  background-color: #d0c8b1;
+}
+
+.right a:hover {
+  color: #b97422;
+}
+
+.background img {
+  width: 100%;
+}
+
+main {
+  background-color: #dcd6c4;
+}
+.tools-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+  padding-bottom: 10px;
+}
+
+.wrapper {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 7% 0;
+  box-shadow: 0px -2px 2px #6e6a61, 2px 0px 2px #6e6a61, 0px 2px 2px #6e6a61,
+    -2px 0px px #6e6a61;
+  width: 80%;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  gap: 30px;
+  width: 26%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.content h3,
+p {
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+}
+
+.tools .more button {
+  border: 2px solid #ffbf00;
+  color: #ffbf00;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tools .more button:hover {
+  background-color: #6e6a61;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #555;
+  padding: 10px 0;
+}
+
+.footer-link a {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 2px solid #bdafaf;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+.footer-link:last-child a {
+  margin-right: 0;
+  border-right: none;
+}
+
+.footer-link a:hover {
+  color: #ffbf00;
+}
+
+.footer-link:hover {
+  background-color: #6e6a61;
+}
+
+.privacy-copyright {
+  text-align: center;
+  background-color: gray;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.privacy-copyright h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.privacy-copyright h4 a {
+  text-decoration: none;
+  color: #ebe5e5;
+  transition: color 0.3s;
+}
+.privacy-copyright h4 a:hover {
+  color: #b97422;
+}
+
+.privacy-copyright h5 {
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+
+.icon-cog,
+.icon-cursor,
+.icon-easel {
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 40px;
+  background-color: orange;
+  color: #fff;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .name {
+    top: -1px;
+    right: -100px;
+  }
+
+  .icons {
+    font-size: 24px;
+  }
+
+  .icons {
+    margin: 7px 0;
+    margin-right: 10%;
+  }
+
+  nav {
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 10px 4%;
+    justify-content: center;
+  }
+
+  .link a,
+  .right a {
+    padding: 10px;
+  }
+
+  .background img {
+    height: auto;
+  }
+
+  .tools-section {
+    padding: 10px 0;
+  }
+
+  .wrapper {
+    padding: 10% 0;
+    width: 90%;
+    gap: 70px;
+  }
+
+  .tools {
+    width: 90%;
+    gap: 30px;
+  }
+
+  .footer-link a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .main-header {
+    padding: 10px 7%;
+  }
+
+  .name {
+    top: -1px;
+    right: -100px;
+  }
+
+  .icons {
+    font-size: 24px;
+  }
+
+  nav {
+    padding: 5px 0;
+    flex-direction: column;
+  }
+
+  .left {
+    flex-wrap: wrap;
+  }
+
+  .link a,
+  .right a {
+    padding: 5px 10px;
+  }
+
+  .tools-section {
+    padding: 5px 0;
+  }
+
+  .wrapper {
+    padding: 13% 0;
+    width: 90%;
+    gap: 60px;
+  }
+
+  .tools {
+    width: 90%;
+    gap: 25px;
+  }
+
+  .content h3,
+  p {
+    font-size: 12px;
+  }
+
+  .tools .more button {
+    padding: 5px 10px;
+  }
+
+  .footer-link a {
+    padding: 5px 7px;
+    font-size: 11px;
+  }
+
+  .privacy-copyright h4 {
+    font-size: 14px;
+  }
+
+  .privacy-copyright h5 {
+    font-size: 12px;
+  }
+
+  .icon-cog,
+  .icon-cursor,
+  .icon-easel {
+    padding: 10px;
+    font-size: 30px;
+  }
+}
